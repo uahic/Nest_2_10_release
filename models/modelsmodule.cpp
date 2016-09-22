@@ -119,6 +119,7 @@
 #include "stdp_pl_connection_hom.h"
 #include "stdp_triplet_connection.h"
 #include "stdp_dopa_connection.h"
+#include "stdp_connection_shared.h"
 #include "gap_junction.h"
 #include "ht_connection.h"
 #include "spike_dilutor.h"
@@ -347,6 +348,7 @@ ModelsModule::init( SLIInterpreter* )
   register_connection_model< STDPConnection< TargetIdentifierIndex > >( net_, "stdp_synapse_hpc" );
 
 
+
   /* BeginDocumentation
      Name: stdp_pl_synapse_hom_hpc - Variant of stdp_pl_synapse_hom with low memory consumption.
      SeeAlso: synapsedict, stdp_pl_synapse_hom, static_synapse_hpc
@@ -385,6 +387,14 @@ ModelsModule::init( SLIInterpreter* )
     net_, "stdp_synapse_hom" );
   register_connection_model< STDPConnectionHom< TargetIdentifierIndex > >(
     net_, "stdp_synapse_hom_hpc" );
+
+
+  /* BeginDocumentation
+     Name: stdp_synapse_shared_hpc - Variant of quantal_stp_synapse with low memory consumption.
+     SeeAlso: synapsedict, stdp_synapse_hom, static_synapse_hpc
+  */
+  register_connection_model< STDPConnectionShared< TargetIdentifierPtrRport > >( net_, "stdp_synapse_shared" );
+  register_connection_model< STDPConnectionShared< TargetIdentifierIndex > >( net_, "stdp_synapse_shared_hpc" );
 
 
   /* BeginDocumentation
