@@ -1,0 +1,503 @@
+Making install in libltdl
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/libltdl'
+/usr/bin/make  install-am
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/libltdl'
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/libltdl'
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/libltdl'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/libltdl'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/libltdl'
+Making install in libnestutil
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/libnestutil'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/libnestutil'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/libnestutil'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/libnestutil'
+Making install in sli
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/sli'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/sli'
+make[2]: Nothing to be done for `install-data-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c sli '/home/perser/workspace/nest-2.10.0/debug_stuff/bin'
+libtool: install: /usr/bin/install -c sli /home/perser/workspace/nest-2.10.0/debug_stuff/bin/sli
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/sli'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/sli'
+Making install in librandom
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/librandom'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/librandom'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/librandom'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/librandom'
+Making install in lib
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/lib'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/lib'
+make[2]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/sli'
+ /usr/bin/install -c -m 644  sli/FormattedIO.sli sli/arraylib.sli sli/debug.sli sli/helpinit.sli sli/install-help.sli sli/librandom.sli sli/library.sli sli/mathematica.sli sli/misc_helpers.sli sli/oosupport.sli sli/processes.sli sli/ps-lib.sli sli/regexp.sli sli/sli-init.sli sli/typeinit.sli sli/nest-init.sli sli/unittest.sli sli/filesystem.sli '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/sli'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/lib'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/lib'
+Making install in nestkernel
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/nestkernel'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/nestkernel'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/nestkernel'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/nestkernel'
+Making install in models
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/models'
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../libnestutil  -I../libnestutil -I../librandom -I../sli -I../nestkernel   -W -Wall -pedantic -Wno-long-long  -O2  -fopenmp  -MT libmodelsmodule_la-modelsmodule.lo -MD -MP -MF .deps/libmodelsmodule_la-modelsmodule.Tpo -c -o libmodelsmodule_la-modelsmodule.lo `test -f 'modelsmodule.cpp' || echo './'`modelsmodule.cpp
+/bin/bash ../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../libnestutil  -I../libnestutil -I../librandom -I../sli -I../nestkernel   -W -Wall -pedantic -Wno-long-long  -O2  -fopenmp  -MT libmodelsmodule_la-stdp_connection_shared.lo -MD -MP -MF .deps/libmodelsmodule_la-stdp_connection_shared.Tpo -c -o libmodelsmodule_la-stdp_connection_shared.lo `test -f 'stdp_connection_shared.cpp' || echo './'`stdp_connection_shared.cpp
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../libnestutil -I../libnestutil -I../librandom -I../sli -I../nestkernel -W -Wall -pedantic -Wno-long-long -O2 -fopenmp -MT libmodelsmodule_la-modelsmodule.lo -MD -MP -MF .deps/libmodelsmodule_la-modelsmodule.Tpo -c modelsmodule.cpp  -fPIC -DPIC -o .libs/libmodelsmodule_la-modelsmodule.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../libnestutil -I../libnestutil -I../librandom -I../sli -I../nestkernel -W -Wall -pedantic -Wno-long-long -O2 -fopenmp -MT libmodelsmodule_la-stdp_connection_shared.lo -MD -MP -MF .deps/libmodelsmodule_la-stdp_connection_shared.Tpo -c stdp_connection_shared.cpp  -fPIC -DPIC -o .libs/libmodelsmodule_la-stdp_connection_shared.o
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from stdp_connection_shared.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+mv -f .deps/libmodelsmodule_la-stdp_connection_shared.Tpo .deps/libmodelsmodule_la-stdp_connection_shared.Plo
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from modelsmodule.cpp:39:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+mv -f .deps/libmodelsmodule_la-modelsmodule.Tpo .deps/libmodelsmodule_la-modelsmodule.Plo
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -W -Wall -pedantic -Wno-long-long  -O2  -fopenmp    -o libmodelsmodule.la  libmodelsmodule_la-ac_generator.lo libmodelsmodule_la-aeif_cond_alpha.lo libmodelsmodule_la-aeif_cond_alpha_RK5.lo libmodelsmodule_la-aeif_cond_alpha_multisynapse.lo libmodelsmodule_la-aeif_cond_exp.lo libmodelsmodule_la-amat2_psc_exp.lo libmodelsmodule_la-correlation_detector.lo libmodelsmodule_la-correlomatrix_detector.lo libmodelsmodule_la-correlospinmatrix_detector.lo libmodelsmodule_la-dc_generator.lo libmodelsmodule_la-gamma_sup_generator.lo libmodelsmodule_la-ginzburg_neuron.lo libmodelsmodule_la-hh_cond_exp_traub.lo libmodelsmodule_la-hh_psc_alpha.lo libmodelsmodule_la-hh_psc_alpha_gap.lo libmodelsmodule_la-ht_neuron.lo libmodelsmodule_la-iaf_chxk_2008.lo libmodelsmodule_la-iaf_chs_2007.lo libmodelsmodule_la-iaf_cond_alpha.lo libmodelsmodule_la-iaf_cond_alpha_mc.lo libmodelsmodule_la-iaf_cond_exp.lo libmodelsmodule_la-iaf_cond_exp_sfa_rr.lo libmodelsmodule_la-iaf_neuron.lo libmodelsmodule_la-iaf_psc_alpha.lo libmodelsmodule_la-iaf_psc_alpha_multisynapse.lo libmodelsmodule_la-iaf_psc_exp_multisynapse.lo libmodelsmodule_la-iaf_psc_delta.lo libmodelsmodule_la-iaf_psc_exp.lo libmodelsmodule_la-iaf_tum_2000.lo libmodelsmodule_la-izhikevich.lo libmodelsmodule_la-mat2_psc_exp.lo libmodelsmodule_la-mcculloch_pitts_neuron.lo libmodelsmodule_la-mip_generator.lo libmodelsmodule_la-modelsmodule.lo libmodelsmodule_la-multimeter.lo libmodelsmodule_la-music_cont_in_proxy.lo libmodelsmodule_la-music_event_in_proxy.lo libmodelsmodule_la-music_event_out_proxy.lo libmodelsmodule_la-music_message_in_proxy.lo libmodelsmodule_la-noise_generator.lo libmodelsmodule_la-parrot_neuron.lo libmodelsmodule_la-poisson_generator.lo libmodelsmodule_la-pp_psc_delta.lo libmodelsmodule_la-pp_pop_psc_delta.lo libmodelsmodule_la-ppd_sup_generator.lo libmodelsmodule_la-pulsepacket_generator.lo libmodelsmodule_la-sli_neuron.lo libmodelsmodule_la-sinusoidal_poisson_generator.lo libmodelsmodule_la-sinusoidal_gamma_generator.lo libmodelsmodule_la-spike_detector.lo libmodelsmodule_la-spike_generator.lo libmodelsmodule_la-spin_detector.lo libmodelsmodule_la-stdp_connection_shared.lo libmodelsmodule_la-stdp_connection_hom.lo libmodelsmodule_la-stdp_dopa_connection.lo libmodelsmodule_la-stdp_pl_connection_hom.lo libmodelsmodule_la-step_current_generator.lo libmodelsmodule_la-tsodyks_connection_hom.lo libmodelsmodule_la-volume_transmitter.lo libmodelsmodule_la-spike_dilutor.lo  -ldl 
+libtool: link: rm -fr  .libs/libmodelsmodule.a .libs/libmodelsmodule.la
+libtool: link: ar cru .libs/libmodelsmodule.a .libs/libmodelsmodule_la-ac_generator.o .libs/libmodelsmodule_la-aeif_cond_alpha.o .libs/libmodelsmodule_la-aeif_cond_alpha_RK5.o .libs/libmodelsmodule_la-aeif_cond_alpha_multisynapse.o .libs/libmodelsmodule_la-aeif_cond_exp.o .libs/libmodelsmodule_la-amat2_psc_exp.o .libs/libmodelsmodule_la-correlation_detector.o .libs/libmodelsmodule_la-correlomatrix_detector.o .libs/libmodelsmodule_la-correlospinmatrix_detector.o .libs/libmodelsmodule_la-dc_generator.o .libs/libmodelsmodule_la-gamma_sup_generator.o .libs/libmodelsmodule_la-ginzburg_neuron.o .libs/libmodelsmodule_la-hh_cond_exp_traub.o .libs/libmodelsmodule_la-hh_psc_alpha.o .libs/libmodelsmodule_la-hh_psc_alpha_gap.o .libs/libmodelsmodule_la-ht_neuron.o .libs/libmodelsmodule_la-iaf_chxk_2008.o .libs/libmodelsmodule_la-iaf_chs_2007.o .libs/libmodelsmodule_la-iaf_cond_alpha.o .libs/libmodelsmodule_la-iaf_cond_alpha_mc.o .libs/libmodelsmodule_la-iaf_cond_exp.o .libs/libmodelsmodule_la-iaf_cond_exp_sfa_rr.o .libs/libmodelsmodule_la-iaf_neuron.o .libs/libmodelsmodule_la-iaf_psc_alpha.o .libs/libmodelsmodule_la-iaf_psc_alpha_multisynapse.o .libs/libmodelsmodule_la-iaf_psc_exp_multisynapse.o .libs/libmodelsmodule_la-iaf_psc_delta.o .libs/libmodelsmodule_la-iaf_psc_exp.o .libs/libmodelsmodule_la-iaf_tum_2000.o .libs/libmodelsmodule_la-izhikevich.o .libs/libmodelsmodule_la-mat2_psc_exp.o .libs/libmodelsmodule_la-mcculloch_pitts_neuron.o .libs/libmodelsmodule_la-mip_generator.o .libs/libmodelsmodule_la-modelsmodule.o .libs/libmodelsmodule_la-multimeter.o .libs/libmodelsmodule_la-music_cont_in_proxy.o .libs/libmodelsmodule_la-music_event_in_proxy.o .libs/libmodelsmodule_la-music_event_out_proxy.o .libs/libmodelsmodule_la-music_message_in_proxy.o .libs/libmodelsmodule_la-noise_generator.o .libs/libmodelsmodule_la-parrot_neuron.o .libs/libmodelsmodule_la-poisson_generator.o .libs/libmodelsmodule_la-pp_psc_delta.o .libs/libmodelsmodule_la-pp_pop_psc_delta.o .libs/libmodelsmodule_la-ppd_sup_generator.o .libs/libmodelsmodule_la-pulsepacket_generator.o .libs/libmodelsmodule_la-sli_neuron.o .libs/libmodelsmodule_la-sinusoidal_poisson_generator.o .libs/libmodelsmodule_la-sinusoidal_gamma_generator.o .libs/libmodelsmodule_la-spike_detector.o .libs/libmodelsmodule_la-spike_generator.o .libs/libmodelsmodule_la-spin_detector.o .libs/libmodelsmodule_la-stdp_connection_shared.o .libs/libmodelsmodule_la-stdp_connection_hom.o .libs/libmodelsmodule_la-stdp_dopa_connection.o .libs/libmodelsmodule_la-stdp_pl_connection_hom.o .libs/libmodelsmodule_la-step_current_generator.o .libs/libmodelsmodule_la-tsodyks_connection_hom.o .libs/libmodelsmodule_la-volume_transmitter.o .libs/libmodelsmodule_la-spike_dilutor.o 
+libtool: link: ranlib .libs/libmodelsmodule.a
+libtool: link: ( cd ".libs" && rm -f "libmodelsmodule.la" && ln -s "../libmodelsmodule.la" "libmodelsmodule.la" )
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/models'
+make[2]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/sli'
+ /usr/bin/install -c -m 644  sli/models-init.sli '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/sli'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/models'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/models'
+Making install in precise
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/precise'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/precise'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/precise'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/precise'
+Making install in topology
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/topology'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/topology'
+/usr/bin/make  install-exec-hook
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/topology'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest'
+ /usr/bin/install -c -m 644 examples/README examples/conncomp.py examples/conncon_sources.py examples/conncon_targets.py examples/connex.py examples/connex_ew.py examples/ctx_2n.py examples/gaussex.py examples/grid_iaf.py examples/grid_iaf_irr.py examples/grid_iaf_oc.py examples/hill_tononi_Vp.py examples/test_3d.py examples/test_3d_exp.py examples/test_3d_gauss.py '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/topology'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/sli'
+ /usr/bin/install -c -m 644  sli/topology-interface.sli '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/sli'
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/topology'
+/usr/bin/python setup.py build --build-base=/home/perser/workspace/nest-2.10.0/topology/build install --prefix=/home/perser/workspace/nest-2.10.0/debug_stuff --install-lib=/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages --install-scripts=/home/perser/workspace/nest-2.10.0/debug_stuff/bin --install-data=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+/usr/bin/make  install-data-hook
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/topology'
+mkdir -p /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/topology
+rm -rf /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/topology/testsuite
+cp -r /home/perser/workspace/nest-2.10.0/topology/testsuite /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/topology
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/topology'
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+Removing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/Topology-2.10.0-py2.7.egg-info
+Writing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/Topology-2.10.0-py2.7.egg-info
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/topology'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/topology'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/topology'
+Making install in nest
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/nest'
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -W -Wall -pedantic -Wno-long-long  -O2  -fopenmp  -export-dynamic   -o nest main.o neststartup.o /home/perser/workspace/nest-2.10.0/models/libmodelsmodule.la /home/perser/workspace/nest-2.10.0/precise/libprecisemodule.la /home/perser/workspace/nest-2.10.0/topology/libtopologymodule.la ../nestkernel/libnest.la ../librandom/librandom.la ../libnestutil/libnestutil.la ../sli/libsli.la -lcurses -lreadline -L/usr/lib -lgsl -lgslcblas -lm  -ldl 
+libtool: link: g++ -W -Wall -pedantic -Wno-long-long -O2 -fopenmp -o nest main.o neststartup.o -Wl,--export-dynamic  /home/perser/workspace/nest-2.10.0/models/.libs/libmodelsmodule.a /home/perser/workspace/nest-2.10.0/precise/.libs/libprecisemodule.a /home/perser/workspace/nest-2.10.0/topology/.libs/libtopologymodule.a ../nestkernel/.libs/libnest.a /usr/lib/x86_64-linux-gnu/libltdl.so ../librandom/.libs/librandom.a ../libnestutil/.libs/libnestutil.a ../sli/.libs/libsli.a -lcurses -lreadline -L/usr/lib -lgsl -lgslcblas -lm -ldl -fopenmp
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/nest'
+make[2]: Nothing to be done for `install-data-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c nest '/home/perser/workspace/nest-2.10.0/debug_stuff/bin'
+libtool: install: /usr/bin/install -c nest /home/perser/workspace/nest-2.10.0/debug_stuff/bin/nest
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/nest'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/nest'
+Making install in doc
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/doc'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/doc'
+make[2]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest'
+ /usr/bin/install -c -m 644 ../LICENSE '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/model_details'
+ /usr/bin/install -c -m 644  model_details/noise_generator.ipynb '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/model_details'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/conngen'
+ /usr/bin/install -c -m 644  conngen/conngen.txt '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/conngen'
+ /usr/bin/install -c -m 644  index.html quickref.html doc_header.txt '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/.'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/doc'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/doc'
+Making install in examples
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/examples'
+Making install in nest
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/examples/nest'
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/examples/nest'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/Potjans_2014'
+ /usr/bin/install -c -m 644  Potjans_2014/microcircuit.sli Potjans_2014/network_params.sli Potjans_2014/README.txt Potjans_2014/run_microcircuit.sh Potjans_2014/sim_params.sli Potjans_2014/spike_analysis.py Potjans_2014/user_params.sli '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/Potjans_2014'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/music'
+ /usr/bin/install -c -m 644  music/clocktest.music music/conttest.music music/conttest.py music/eventtest.music music/messages0.dat music/messages1.dat music/minimalmusicsetup.music music/minimalmusicsetup-pynest.music music/minimalmusicsetup_receivenest.py music/minimalmusicsetup_receivenest.sli music/minimalmusicsetup_sendnest.py music/minimalmusicsetup_sendnest.sli music/msgtest.music music/msgtest.py music/spike_exporter.sli music/three_neurons_threaded.music music/three_neurons_threaded_receivenest.sli music/three_neurons_threaded_sendnest.sli '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/music'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/Brette_et_al_2007'
+ /usr/bin/install -c -m 644  Brette_et_al_2007/coba.sli Brette_et_al_2007/cuba.sli Brette_et_al_2007/cuba_stdp.sli Brette_et_al_2007/cuba_ps.sli Brette_et_al_2007/hh_coba.sli Brette_et_al_2007/benchmark.sli '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/Brette_et_al_2007'
+ /usr/bin/install -c -m 644  balancedneuron.sli balancedneuron-2.sli brunel-2000.sli brunel_ps.sli hpc_benchmark.sli multimeter.sli '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/.'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/gap_junction'
+ /usr/bin/install -c -m 644  gap_junction/two_neurons.py gap_junction/inhibitory_network.py '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/gap_junction'
+/usr/bin/make  install-data-hook
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/examples/nest'
+chmod 755 /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/music/conttest.py
+chmod 755 /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/music/minimalmusicsetup_receivenest.py
+chmod 755 /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/music/minimalmusicsetup_sendnest.py
+chmod 755 /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/music/msgtest.py
+chmod 755 /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/Potjans_2014/run_microcircuit.sh
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples/nest'
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples/nest'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples/nest'
+Making install in sli
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/examples/sli'
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/examples/sli'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples'
+ /usr/bin/install -c -m 644  nestrc.sli '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/.'
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples/sli'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples/sli'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/examples'
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/examples'
+make[3]: Nothing to be done for `install-exec-am'.
+/usr/bin/make  install-data-hook
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/examples'
+/usr/bin/install -c /home/perser/workspace/nest-2.10.0/examples/run_examples.sh /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples'
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples'
+Making install in extras
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/extras'
+Making install in ConnPlotter
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+/usr/bin/make  install-exec-hook
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/ConnPlotter'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/ConnPlotter'
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+cd .; /usr/bin/python setup.py build --build-base=/home/perser/workspace/nest-2.10.0/extras/ConnPlotter/build install --prefix=/home/perser/workspace/nest-2.10.0/debug_stuff --install-lib=/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages --install-scripts=/home/perser/workspace/nest-2.10.0/debug_stuff/bin --install-data=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+ /usr/bin/install -c -m 644 doc/connplotter_tutorial.pdf '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/ConnPlotter'
+ /usr/bin/install -c -m 644 examples/connplotter_tutorial.py '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/ConnPlotter'
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+Removing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/ConnPlotter-0.7a-py2.7.egg-info
+Writing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/ConnPlotter-0.7a-py2.7.egg-info
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/extras'
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/extras'
+make[3]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/bibliography'
+ /usr/bin/install -c -m 644  bibliography/nest.bib '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/bibliography'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/logos'
+ /usr/bin/install -c -m 644  logos/nest.pdf logos/nest.png logos/nest.svg logos/nest-initiative.pdf logos/nest-initiative.png logos/nest-initiative.svg logos/nest-initiative-www.pdf logos/nest-initiative-www.png logos/nest-initiative-www.svg logos/nest-simulated.pdf logos/nest-simulated.png logos/nest-simulated.svg logos/nest-simulated-www.pdf logos/nest-simulated-www.png logos/nest-simulated-www.svg '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/logos'
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras'
+Making install in testsuite
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/testsuite'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/testsuite'
+make[2]: Nothing to be done for `install-exec-am'.
+/usr/bin/make  install-data-hook
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/testsuite'
+for dir in selftests unittests regressiontests manualtests mpitests mpi_selftests mpi_selftests/pass mpi_selftests/fail ; do \
+          rm -rf /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/$dir/*; \
+	  mkdir -p /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/$dir; \
+	  cp /home/perser/workspace/nest-2.10.0/testsuite/$dir/* /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/$dir; \
+	done
+cp: omitting directory ‘/home/perser/workspace/nest-2.10.0/testsuite/manualtests/ticket-458’
+cp: omitting directory ‘/home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/fail’
+cp: omitting directory ‘/home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/pass’
+mkdir -p /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras
+/usr/bin/install -c do_tests.sh /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/testsuite'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/testsuite'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/testsuite'
+Making install in pynest
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0/pynest'
+/usr/bin/make  install-am
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0/pynest'
+/bin/bash ../libtool  --tag=CXX   --mode=link g++ -fno-strict-aliasing  -shared -module -avoid-version -export-dynamic -XCClinker -fopenmp  -o pynestkernel.la -rpath /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest pynestkernel_la-pynestkernel.lo ../nest/pynestkernel_la-neststartup.lo /home/perser/workspace/nest-2.10.0/models/libmodelsmodule.la /home/perser/workspace/nest-2.10.0/precise/libprecisemodule.la /home/perser/workspace/nest-2.10.0/topology/libtopologymodule.la ../nestkernel/libnest.la ../librandom/librandom.la ../libnestutil/libnestutil.la ../sli/libsli.la -lcurses -lreadline -L/usr/lib -lgsl -lgslcblas -lm  -ldl 
+libtool: link: rm -fr  .libs/pynestkernel.la .libs/pynestkernel.lai .libs/pynestkernel.so
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbeginS.o  .libs/pynestkernel_la-pynestkernel.o ../nest/.libs/pynestkernel_la-neststartup.o  -Wl,--whole-archive /home/perser/workspace/nest-2.10.0/models/.libs/libmodelsmodule.a /home/perser/workspace/nest-2.10.0/precise/.libs/libprecisemodule.a /home/perser/workspace/nest-2.10.0/topology/.libs/libtopologymodule.a ../nestkernel/.libs/libnest.a ../librandom/.libs/librandom.a ../libnestutil/.libs/libnestutil.a ../sli/.libs/libsli.a -Wl,--no-whole-archive  /usr/lib/x86_64-linux-gnu/libltdl.so -lcurses -lreadline -L/usr/lib -lgsl -lgslcblas -ldl -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-linux-gnu/4.9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o  -fopenmp   -fopenmp -Wl,-soname -Wl,pynestkernel.so -o .libs/pynestkernel.so
+libtool: link: ( cd ".libs" && rm -f "pynestkernel.la" && ln -s "../pynestkernel.la" "pynestkernel.la" )
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0/pynest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   pynestkernel.la '/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/pynest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/pynest/LeNovere_2012'
+ /usr/bin/install -c -m 644 examples/balancedneuron.py examples/brunel_alpha_nest.py examples/brunel_alpha_numpy.py examples/brunel_delta_nest.py examples/BrodyHopfield.py examples/brette_gerstner_fig_2c.py examples/brette_gerstner_fig_3d.py examples/CampbellSiegert.py examples/csa_example.py examples/if_curve.py examples/intrinsic_currents_spiking.py examples/intrinsic_currents_subthreshold.py examples/mc_neuron.py examples/multimeter_file.py examples/one_neuron.py examples/one_neuron_with_noise.py examples/pulsepacket.py examples/sinusoidal_gamma_generator.py examples/sinusoidal_poisson_generator.py examples/testiaf.py examples/tsodyks_depressing.py examples/tsodyks_facilitating.py examples/vinit_example.py examples/structural_plasticity.py '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/pynest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest'
+ /usr/bin/install -c -m 644 examples/LeNovere_2012/README.txt '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/pynest/LeNovere_2012'
+ /usr/bin/install -c -m 644 README.md '/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest'
+libtool: install: /usr/bin/install -c .libs/pynestkernel.so /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest/pynestkernel.so
+libtool: install: /usr/bin/install -c .libs/pynestkernel.lai /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest/pynestkernel.la
+libtool: finish: PATH="/home/perser/workspace/nest-2.10.0/debug_stuff/bin:/opt/ros/indigo/bin:/home/perser/.opt/bbp/nrp-services:/home/perser/.local/bin:/home/perser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/sbin" ldconfig -n /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+/usr/bin/make  install-exec-hook
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/pynest'
+/usr/bin/python setup.py build --build-base=/home/perser/workspace/nest-2.10.0/pynest/build install --prefix=/home/perser/workspace/nest-2.10.0/debug_stuff --install-lib=/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages --install-scripts=/home/perser/workspace/nest-2.10.0/debug_stuff/bin --install-data=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/pynest/nest
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+Removing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/PyNEST-2.10.0-py2.7.egg-info
+Writing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/PyNEST-2.10.0-py2.7.egg-info
+mkdir -p /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras
+/usr/bin/install -c do_tests.py /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras/
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/pynest'
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0/pynest'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0/pynest'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0/pynest'
+make[1]: Entering directory `/home/perser/workspace/nest-2.10.0'
+make[2]: Entering directory `/home/perser/workspace/nest-2.10.0'
+make[2]: Nothing to be done for `install-exec-am'.
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras/emacs'
+ /usr/bin/install -c -m 644  extras/emacs/sli.el.in extras/emacs/postscript-sli.el extras/emacs/psvn.el '/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras/emacs'
+/usr/bin/make  install-data-hook
+make[3]: Entering directory `/home/perser/workspace/nest-2.10.0'
+rm -rf /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/help/*
+Making install-exec in libltdl
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/libltdl'
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/libltdl'
+Making install-exec in libnestutil
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/libnestutil'
+make[4]: Nothing to be done for `install-exec'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/libnestutil'
+Making install-exec in sli
+mkdir -p /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/help
+SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest NESTRCFILENAME=/dev/null \
+	  /home/perser/workspace/nest-2.10.0/debug_stuff/bin/sli --userargs="/home/perser/workspace/nest-2.10.0/libnestutil:/home/perser/workspace/nest-2.10.0/sli:/home/perser/workspace/nest-2.10.0/librandom:/home/perser/workspace/nest-2.10.0/lib:/home/perser/workspace/nest-2.10.0/lib/sli:/home/perser/workspace/nest-2.10.0/nestkernel:/home/perser/workspace/nest-2.10.0/models:/home/perser/workspace/nest-2.10.0/models/sli:/home/perser/workspace/nest-2.10.0/precise:/home/perser/workspace/nest-2.10.0/topology:/home/perser/workspace/nest-2.10.0/topology/sli:/home/perser/workspace/nest-2.10.0/nest" ./lib/sli/install-help.sli 2>&1 > /home/perser/workspace/nest-2.10.0/install-help.log
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/sli'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c sli '/home/perser/workspace/nest-2.10.0/debug_stuff/bin'
+libtool: install: /usr/bin/install -c sli /home/perser/workspace/nest-2.10.0/debug_stuff/bin/sli
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/sli'
+Making install-exec in librandom
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/librandom'
+make[4]: Nothing to be done for `install-exec'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/librandom'
+Making install-exec in lib
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/lib'
+make[4]: Nothing to be done for `install-exec'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/lib'
+Making install-exec in nestkernel
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/nestkernel'
+make[4]: Nothing to be done for `install-exec'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/nestkernel'
+Making install-exec in models
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/models'
+make[4]: Nothing to be done for `install-exec'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/models'
+Making install-exec in precise
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/precise'
+make[4]: Nothing to be done for `install-exec'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/precise'
+Making install-exec in topology
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/topology'
+/usr/bin/make  install-exec-hook
+make[5]: Entering directory `/home/perser/workspace/nest-2.10.0/topology'
+/usr/bin/python setup.py build --build-base=/home/perser/workspace/nest-2.10.0/topology/build install --prefix=/home/perser/workspace/nest-2.10.0/debug_stuff --install-lib=/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages --install-scripts=/home/perser/workspace/nest-2.10.0/debug_stuff/bin --install-data=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+Removing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/Topology-2.10.0-py2.7.egg-info
+Writing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/Topology-2.10.0-py2.7.egg-info
+make[5]: Leaving directory `/home/perser/workspace/nest-2.10.0/topology'
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/topology'
+Making install-exec in nest
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/nest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c nest '/home/perser/workspace/nest-2.10.0/debug_stuff/bin'
+libtool: install: /usr/bin/install -c nest /home/perser/workspace/nest-2.10.0/debug_stuff/bin/nest
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/nest'
+Making install-exec in doc
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/doc'
+make[4]: Nothing to be done for `install-exec'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/doc'
+Making install-exec in examples
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/examples'
+Making install-exec in nest
+make[5]: Entering directory `/home/perser/workspace/nest-2.10.0/examples/nest'
+make[5]: Nothing to be done for `install-exec'.
+make[5]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples/nest'
+Making install-exec in sli
+make[5]: Entering directory `/home/perser/workspace/nest-2.10.0/examples/sli'
+make[5]: Nothing to be done for `install-exec'.
+make[5]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples/sli'
+make[5]: Entering directory `/home/perser/workspace/nest-2.10.0/examples'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples'
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/examples'
+Making install-exec in extras
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/extras'
+Making install-exec in ConnPlotter
+make[5]: Entering directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+/usr/bin/make  install-exec-hook
+make[6]: Entering directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+cd .; /usr/bin/python setup.py build --build-base=/home/perser/workspace/nest-2.10.0/extras/ConnPlotter/build install --prefix=/home/perser/workspace/nest-2.10.0/debug_stuff --install-lib=/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages --install-scripts=/home/perser/workspace/nest-2.10.0/debug_stuff/bin --install-data=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+Removing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/ConnPlotter-0.7a-py2.7.egg-info
+Writing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/ConnPlotter-0.7a-py2.7.egg-info
+make[6]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+make[5]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras/ConnPlotter'
+make[5]: Entering directory `/home/perser/workspace/nest-2.10.0/extras'
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras'
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/extras'
+Making install-exec in testsuite
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/testsuite'
+make[4]: Nothing to be done for `install-exec'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/testsuite'
+Making install-exec in pynest
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/pynest'
+ /bin/mkdir -p '/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   pynestkernel.la '/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest'
+libtool: install: /usr/bin/install -c .libs/pynestkernel.so /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest/pynestkernel.so
+libtool: install: /usr/bin/install -c .libs/pynestkernel.lai /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest/pynestkernel.la
+libtool: finish: PATH="/home/perser/workspace/nest-2.10.0/debug_stuff/bin:/opt/ros/indigo/bin:/home/perser/.opt/bbp/nrp-services:/home/perser/.local/bin:/home/perser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/sbin" ldconfig -n /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/nest
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+/usr/bin/make  install-exec-hook
+make[5]: Entering directory `/home/perser/workspace/nest-2.10.0/pynest'
+/usr/bin/python setup.py build --build-base=/home/perser/workspace/nest-2.10.0/pynest/build install --prefix=/home/perser/workspace/nest-2.10.0/debug_stuff --install-lib=/home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages --install-scripts=/home/perser/workspace/nest-2.10.0/debug_stuff/bin --install-data=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/examples/pynest/nest
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+Removing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/PyNEST-2.10.0-py2.7.egg-info
+Writing /home/perser/workspace/nest-2.10.0/debug_stuff/lib/python2.7/site-packages/PyNEST-2.10.0-py2.7.egg-info
+mkdir -p /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras
+/usr/bin/install -c do_tests.py /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras/
+make[5]: Leaving directory `/home/perser/workspace/nest-2.10.0/pynest'
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/pynest'
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0'
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0'
+/usr/bin/make SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest NESTRCFILENAME=/dev/null \
+	  -k -C /home/perser/workspace/nest-2.10.0/testsuite install-slidoc 2> /dev/null
+make[4]: Entering directory `/home/perser/workspace/nest-2.10.0/testsuite'
+mkdir -p /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/help
+for dir in selftests unittests regressiontests manualtests mpitests mpi_selftests mpi_selftests/pass mpi_selftests/fail ; do \
+	  /home/perser/workspace/nest-2.10.0/debug_stuff/bin/sli --userargs="/home/perser/workspace/nest-2.10.0/testsuite/$dir" ../lib/sli/install-help.sli 2>&1 >> /home/perser/workspace/nest-2.10.0/install-help.log; \
+	done
+make[4]: Leaving directory `/home/perser/workspace/nest-2.10.0/testsuite'
+sed -e "s:++PKGDATADIR++:/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest:"\
+	    -e "s:++PKGDOCDIR++:/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest:"\
+	    -e "s:++PKGSRCDIR++:/home/perser/workspace/nest-2.10.0:"\
+	    /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras/emacs/sli.el.in > /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras/emacs/sli.el
+rm /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/extras/emacs/sli.el.in
+\
+	/usr/bin/install -c /home/perser/workspace/nest-2.10.0/extras/nest-config /home/perser/workspace/nest-2.10.0/debug_stuff/bin/
+/usr/bin/install -c /home/perser/workspace/nest-2.10.0/extras/nest_serial /home/perser/workspace/nest-2.10.0/debug_stuff/bin/
+/usr/bin/install -c /home/perser/workspace/nest-2.10.0/extras/nest_indirect /home/perser/workspace/nest-2.10.0/debug_stuff/bin/
+/usr/bin/install -c /home/perser/workspace/nest-2.10.0/extras/nest_vars.sh /home/perser/workspace/nest-2.10.0/debug_stuff/bin/
+/usr/bin/install -c -m 644 /home/perser/workspace/nest-2.10.0/README.md /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/
+/usr/bin/install -c -m 644 /home/perser/workspace/nest-2.10.0/NEWS /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest/
+\
+	/home/perser/workspace/nest-2.10.0/extras/create_rcsinfo.sh /home/perser/workspace/nest-2.10.0 /home/perser/workspace/nest-2.10.0
+v2.10.0
+test -f /home/perser/workspace/nest-2.10.0/lib/sli/rcsinfo.sli \
+	  && /usr/bin/install -c -m 644 /home/perser/workspace/nest-2.10.0/lib/sli/rcsinfo.sli /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest/sli
+make[3]: Leaving directory `/home/perser/workspace/nest-2.10.0'
+make[2]: Leaving directory `/home/perser/workspace/nest-2.10.0'
+make[1]: Leaving directory `/home/perser/workspace/nest-2.10.0'
