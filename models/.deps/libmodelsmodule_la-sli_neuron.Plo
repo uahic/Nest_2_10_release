@@ -168,9 +168,85 @@ libmodelsmodule_la-sli_neuron.lo: sli_neuron.cpp \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
- ../nestkernel/connector_model.h ../nestkernel/connection.h \
- ../nestkernel/nest_timeconverter.h ../sli/dict.h ../sli/arraydatum.h \
- ../sli/doubledatum.h ../nestkernel/common_synapse_properties.h \
+ /home/perser/.local/include/music.hh \
+ /home/perser/.local/include/music/runtime.hh \
+ /home/perser/.local/include/music/music-config.hh \
+ /usr/lib/openmpi/include/mpi.h \
+ /usr/lib/openmpi/include/mpi_portable_platform.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/constants.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/functions.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/datatype.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/exception.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/op.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/status.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/request.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/group.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/comm.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/win.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/file.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/errhandler.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/topology.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intercomm.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/info.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/datatype_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/group_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/errhandler_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/status_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/info_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h \
+ /usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/file_inln.h \
+ /home/perser/.local/include/music/setup.hh \
+ /home/perser/.local/include/music/port.hh \
+ /home/perser/.local/include/music/data_map.hh \
+ /home/perser/.local/include/music/index_map.hh \
+ /usr/include/c++/4.9/memory \
+ /usr/include/c++/4.9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/4.9/backward/auto_ptr.h \
+ /home/perser/.local/include/music/interval.hh \
+ /home/perser/.local/include/music/event.hh \
+ /home/perser/.local/include/music/message.hh \
+ /home/perser/.local/include/music/connector.hh \
+ /home/perser/.local/include/music/FIBO.hh \
+ /home/perser/.local/include/music/spatial.hh \
+ /home/perser/.local/include/music/connectivity.hh \
+ /home/perser/.local/include/music/sampler.hh \
+ /home/perser/.local/include/music/collector.hh \
+ /home/perser/.local/include/music/BIFO.hh \
+ /home/perser/.local/include/music/interval_tree.hh \
+ /home/perser/.local/include/music/distributor.hh \
+ /home/perser/.local/include/music/event_routing_map.hh \
+ /home/perser/.local/include/music/clock.hh \
+ /home/perser/.local/include/music/subconnector.hh \
+ /home/perser/.local/include/music/linear_index.hh \
+ /home/perser/.local/include/music/cont_data.hh \
+ /home/perser/.local/include/music/temporal.hh \
+ /home/perser/.local/include/music/debug.hh \
+ /home/perser/.local/include/music/connection.hh \
+ /home/perser/.local/include/music/application_graph.hh \
+ /home/perser/.local/include/music/error.hh \
+ /home/perser/.local/include/music/configuration.hh \
+ /home/perser/.local/include/music/application_map.hh \
+ /home/perser/.local/include/music/scheduler.hh \
+ /home/perser/.local/include/music/multibuffer.hh \
+ /usr/include/c++/4.9/set /usr/include/c++/4.9/bits/stl_set.h \
+ /usr/include/c++/4.9/bits/stl_multiset.h \
+ /home/perser/.local/include/music/scheduler_agent.hh \
+ /home/perser/.local/include/music/setup.hh \
+ /home/perser/.local/include/music/permutation_index.hh \
+ /home/perser/.local/include/music/array_data.hh \
+ ../nestkernel/music_event_handler.h ../nestkernel/connector_model.h \
+ ../nestkernel/connection.h ../nestkernel/nest_timeconverter.h \
+ ../sli/dict.h ../sli/arraydatum.h ../sli/doubledatum.h \
+ ../nestkernel/common_synapse_properties.h \
  ../nestkernel/connection_label.h ../nestkernel/spikecounter.h \
  ../nestkernel/syn_id_delay.h ../nestkernel/universal_data_logger.h \
  ../nestkernel/recordables_map.h ../nestkernel/network.h \
@@ -179,9 +255,7 @@ libmodelsmodule_la-sli_neuron.lo: sli_neuron.cpp \
  ../libnestutil/sparsetable.h ../libnestutil/sparseconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.9/include/stdint.h /usr/include/stdint.h \
  /usr/include/inttypes.h /usr/include/c++/4.9/iterator \
- /usr/include/c++/4.9/bits/stream_iterator.h /usr/include/c++/4.9/memory \
- /usr/include/c++/4.9/bits/stl_raw_storage_iter.h \
- /usr/include/c++/4.9/backward/auto_ptr.h ../libnestutil/type_traits.h \
+ /usr/include/c++/4.9/bits/stream_iterator.h ../libnestutil/type_traits.h \
  ../libnestutil/template_util.h ../libnestutil/hashtable-common.h \
  /usr/include/c++/4.9/stdexcept \
  ../libnestutil/libc_allocator_with_realloc.h \
@@ -691,6 +765,160 @@ sli_neuron.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
 
+/home/perser/.local/include/music.hh:
+
+/home/perser/.local/include/music/runtime.hh:
+
+/home/perser/.local/include/music/music-config.hh:
+
+/usr/lib/openmpi/include/mpi.h:
+
+/usr/lib/openmpi/include/mpi_portable_platform.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/mpicxx.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/constants.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/functions.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/datatype.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/exception.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/op.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/status.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/request.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/group.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/comm.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/win.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/file.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/errhandler.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/topology.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intercomm.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/info.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/datatype_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/functions_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/request_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/comm_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/topology_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/intercomm_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/group_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/errhandler_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/status_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/info_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/win_inln.h:
+
+/usr/lib/openmpi/include/openmpi/ompi/mpi/cxx/file_inln.h:
+
+/home/perser/.local/include/music/setup.hh:
+
+/home/perser/.local/include/music/port.hh:
+
+/home/perser/.local/include/music/data_map.hh:
+
+/home/perser/.local/include/music/index_map.hh:
+
+/usr/include/c++/4.9/memory:
+
+/usr/include/c++/4.9/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/4.9/backward/auto_ptr.h:
+
+/home/perser/.local/include/music/interval.hh:
+
+/home/perser/.local/include/music/event.hh:
+
+/home/perser/.local/include/music/message.hh:
+
+/home/perser/.local/include/music/connector.hh:
+
+/home/perser/.local/include/music/FIBO.hh:
+
+/home/perser/.local/include/music/spatial.hh:
+
+/home/perser/.local/include/music/connectivity.hh:
+
+/home/perser/.local/include/music/sampler.hh:
+
+/home/perser/.local/include/music/collector.hh:
+
+/home/perser/.local/include/music/BIFO.hh:
+
+/home/perser/.local/include/music/interval_tree.hh:
+
+/home/perser/.local/include/music/distributor.hh:
+
+/home/perser/.local/include/music/event_routing_map.hh:
+
+/home/perser/.local/include/music/clock.hh:
+
+/home/perser/.local/include/music/subconnector.hh:
+
+/home/perser/.local/include/music/linear_index.hh:
+
+/home/perser/.local/include/music/cont_data.hh:
+
+/home/perser/.local/include/music/temporal.hh:
+
+/home/perser/.local/include/music/debug.hh:
+
+/home/perser/.local/include/music/connection.hh:
+
+/home/perser/.local/include/music/application_graph.hh:
+
+/home/perser/.local/include/music/error.hh:
+
+/home/perser/.local/include/music/configuration.hh:
+
+/home/perser/.local/include/music/application_map.hh:
+
+/home/perser/.local/include/music/scheduler.hh:
+
+/home/perser/.local/include/music/multibuffer.hh:
+
+/usr/include/c++/4.9/set:
+
+/usr/include/c++/4.9/bits/stl_set.h:
+
+/usr/include/c++/4.9/bits/stl_multiset.h:
+
+/home/perser/.local/include/music/scheduler_agent.hh:
+
+/home/perser/.local/include/music/setup.hh:
+
+/home/perser/.local/include/music/permutation_index.hh:
+
+/home/perser/.local/include/music/array_data.hh:
+
+../nestkernel/music_event_handler.h:
+
 ../nestkernel/connector_model.h:
 
 ../nestkernel/connection.h:
@@ -738,12 +966,6 @@ sli_neuron.h:
 /usr/include/c++/4.9/iterator:
 
 /usr/include/c++/4.9/bits/stream_iterator.h:
-
-/usr/include/c++/4.9/memory:
-
-/usr/include/c++/4.9/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/4.9/backward/auto_ptr.h:
 
 ../libnestutil/type_traits.h:
 

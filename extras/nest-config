@@ -1,9 +1,9 @@
 #! /bin/sh
 
-prefix=/home/jochen/opt/nest
+prefix=/home/perser/workspace/nest-2.10.0/build
 exec_prefix=${prefix}
-srcdir=/home/jochen/work/src/nest-simulator/__NEST_SOURCE
-builddir=/home/jochen/work/src/nest-simulator/__NEST_BUILD
+srcdir=/home/perser/workspace/nest-2.10.0
+builddir=/home/perser/workspace/nest-2.10.0
 configure_bluegene=no
 
 usage()
@@ -63,7 +63,7 @@ while test $# -gt 0; do
         ;;
 
     --cflags)
-        NEST_CFLAGS="-I${srcdir}/{libnestutil,librandom,sli,nestkernel,nest,topology}    -fopenmp"
+        NEST_CFLAGS="-I${srcdir}/{libnestutil,librandom,sli,nestkernel,nest,topology} -I/home/perser/.local//include   -fopenmp"
         if [ "${builddir}" != "${srcdir}" ]; then
             NEST_CFLAGS="-I${builddir}/libnestutil ${NEST_CFLAGS}"
         fi
@@ -71,7 +71,7 @@ while test $# -gt 0; do
         ;;
 
     --libs)
-        NEST_LDFLAGS="-l{models,precise,topology}module -l{nest,random,sli}   -lcurses -lreadline -L/usr/lib -lgsl -lgslcblas -lm   -lpthread -fopenmp -export-dynamic"
+        NEST_LDFLAGS="-l{models,precise,topology}module -l{nest,random,sli}   -lcurses -lreadline -L/usr/lib -lgsl -lgslcblas -lm -L/home/perser/.local//lib -lmusic  -lpthread -fopenmp -export-dynamic"
         if [ "${builddir}" != "${srcdir}" ]; then
             NEST_LDFLAGS="-L${builddir}/{nestkernel,models,precise,librandom,sli,topology}/.libs ${NEST_LDFLAGS}"
         else
@@ -81,7 +81,7 @@ while test $# -gt 0; do
         ;;
 
     --compiler)
-        echo g++
+        echo mpicxx
         ;;
 
     --configure-bluegene)

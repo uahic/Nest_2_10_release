@@ -3447,7 +3447,6 @@ END
   fi
 fi
 
-
 # Allow to build NEST using silent rules.
 # Check whether --enable-silent-rules was given.
 if test "${enable_silent_rules+set}" = set; then :

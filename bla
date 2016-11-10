@@ -1,0 +1,1137 @@
+In file included from music_cont_out_proxy.cpp:23:0:
+music_cont_out_proxy.h: In constructor 'nest::music_cont_out_proxy::Parameters_::Parameters_()':
+music_cont_out_proxy.h:165:17: warning: 'nest::music_cont_out_proxy::Parameters_::port_name_' will be initialized after [-Wreorder]
+     std::string port_name_;           //!< the name of MUSIC port to connect to
+                 ^
+music_cont_out_proxy.h:164:10: warning:   'nest::Time nest::music_cont_out_proxy::Parameters_::interval_' [-Wreorder]
+     Time interval_;                   //!< sampling interval, in ms
+          ^
+music_cont_out_proxy.cpp:54:1: warning:   when initialized here [-Wreorder]
+ music_cont_out_proxy::Parameters_::Parameters_()
+ ^
+In file included from music_cont_out_proxy.cpp:23:0:
+music_cont_out_proxy.h: In copy constructor 'nest::music_cont_out_proxy::Parameters_::Parameters_(const nest::music_cont_out_proxy::Parameters_&)':
+music_cont_out_proxy.h:165:17: warning: 'nest::music_cont_out_proxy::Parameters_::port_name_' will be initialized after [-Wreorder]
+     std::string port_name_;           //!< the name of MUSIC port to connect to
+                 ^
+music_cont_out_proxy.h:164:10: warning:   'nest::Time nest::music_cont_out_proxy::Parameters_::interval_' [-Wreorder]
+     Time interval_;                   //!< sampling interval, in ms
+          ^
+music_cont_out_proxy.cpp:62:1: warning:   when initialized here [-Wreorder]
+ music_cont_out_proxy::Parameters_::Parameters_( const Parameters_& p )
+ ^
+In file included from music_cont_out_proxy.cpp:23:0:
+music_cont_out_proxy.h: In constructor 'nest::music_cont_out_proxy::music_cont_out_proxy()':
+music_cont_out_proxy.h:202:10: warning: 'nest::music_cont_out_proxy::S_' will be initialized after [-Wreorder]
+   State_ S_;
+          ^
+music_cont_out_proxy.h:201:15: warning:   'nest::music_cont_out_proxy::Parameters_ nest::music_cont_out_proxy::P_' [-Wreorder]
+   Parameters_ P_;
+               ^
+music_cont_out_proxy.cpp:234:1: warning:   when initialized here [-Wreorder]
+ music_cont_out_proxy::music_cont_out_proxy()
+ ^
+In file included from music_cont_out_proxy.cpp:23:0:
+music_cont_out_proxy.h: In copy constructor 'nest::music_cont_out_proxy::music_cont_out_proxy(const nest::music_cont_out_proxy&)':
+music_cont_out_proxy.h:202:10: warning: 'nest::music_cont_out_proxy::S_' will be initialized after [-Wreorder]
+   State_ S_;
+          ^
+music_cont_out_proxy.h:201:15: warning:   'nest::music_cont_out_proxy::Parameters_ nest::music_cont_out_proxy::P_' [-Wreorder]
+   Parameters_ P_;
+               ^
+music_cont_out_proxy.cpp:242:1: warning:   when initialized here [-Wreorder]
+ music_cont_out_proxy::music_cont_out_proxy( const music_cont_out_proxy& n )
+ ^
+music_cont_out_proxy.cpp: In member function 'virtual void nest::music_cont_out_proxy::calibrate()':
+music_cont_out_proxy.cpp:293:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for ( long_t i = 0; i < P_.target_gids_.size(); i++ )
+                           ^
+music_cont_out_proxy.cpp:297:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for ( long_t j = 0; j < P_.record_from_.size(); ++j )
+                               ^
+music_cont_out_proxy.cpp: In member function 'virtual void nest::music_cont_out_proxy::set_status(const DictionaryDatum&)':
+music_cont_out_proxy.cpp:378:6: error: 'struct nest::music_cont_out_proxy::State_' has no member named 'set'
+   S_.set( d ); // throws if BadProperty
+      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from music_cont_out_proxy.h:42,
+                 from music_cont_out_proxy.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from music_event_out_proxy.h:31:0,
+                 from music_event_out_proxy.cpp:27:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from music_event_in_proxy.h:33:0,
+                 from music_event_in_proxy.cpp:27:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:31:0,
+                 from music_cont_out_proxy.h:42,
+                 from music_cont_out_proxy.cpp:23:
+../nestkernel/nest.h: At global scope:
+../nestkernel/nest.h:116:13: warning: 'nest::invalid_index' defined but not used [-Wunused-variable]
+ const index invalid_index = std::numeric_limits< index >::max();
+             ^
+../nestkernel/nest.h:122:16: warning: 'nest::invalid_synindex' defined but not used [-Wunused-variable]
+ const synindex invalid_synindex = std::numeric_limits< synindex >::max();
+                ^
+../nestkernel/nest.h:131:13: warning: 'nest::max_targetindex' defined but not used [-Wunused-variable]
+ const index max_targetindex = invalid_targetindex - 1;
+             ^
+make[1]: *** [libmodelsmodule_la-music_cont_out_proxy.lo] Error 1
+make[1]: *** Waiting for unfinished jobs....
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from modelsmodule.cpp:39:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+make: *** [install-recursive] Error 1
+In file included from ../nestkernel/node.h:36:0,
+                 from music_message_in_proxy.h:32,
+                 from music_message_in_proxy.cpp:27:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from music_cont_out_proxy.cpp:23:0:
+music_cont_out_proxy.h: In constructor 'nest::music_cont_out_proxy::Parameters_::Parameters_()':
+music_cont_out_proxy.h:165:17: warning: 'nest::music_cont_out_proxy::Parameters_::port_name_' will be initialized after [-Wreorder]
+     std::string port_name_;           //!< the name of MUSIC port to connect to
+                 ^
+music_cont_out_proxy.h:164:10: warning:   'nest::Time nest::music_cont_out_proxy::Parameters_::interval_' [-Wreorder]
+     Time interval_;                   //!< sampling interval, in ms
+          ^
+music_cont_out_proxy.cpp:54:1: warning:   when initialized here [-Wreorder]
+ music_cont_out_proxy::Parameters_::Parameters_()
+ ^
+In file included from music_cont_out_proxy.cpp:23:0:
+music_cont_out_proxy.h: In copy constructor 'nest::music_cont_out_proxy::Parameters_::Parameters_(const nest::music_cont_out_proxy::Parameters_&)':
+music_cont_out_proxy.h:165:17: warning: 'nest::music_cont_out_proxy::Parameters_::port_name_' will be initialized after [-Wreorder]
+     std::string port_name_;           //!< the name of MUSIC port to connect to
+                 ^
+music_cont_out_proxy.h:164:10: warning:   'nest::Time nest::music_cont_out_proxy::Parameters_::interval_' [-Wreorder]
+     Time interval_;                   //!< sampling interval, in ms
+          ^
+music_cont_out_proxy.cpp:62:1: warning:   when initialized here [-Wreorder]
+ music_cont_out_proxy::Parameters_::Parameters_( const Parameters_& p )
+ ^
+In file included from music_cont_out_proxy.cpp:23:0:
+music_cont_out_proxy.h: In constructor 'nest::music_cont_out_proxy::music_cont_out_proxy()':
+music_cont_out_proxy.h:202:10: warning: 'nest::music_cont_out_proxy::S_' will be initialized after [-Wreorder]
+   State_ S_;
+          ^
+music_cont_out_proxy.h:201:15: warning:   'nest::music_cont_out_proxy::Parameters_ nest::music_cont_out_proxy::P_' [-Wreorder]
+   Parameters_ P_;
+               ^
+music_cont_out_proxy.cpp:234:1: warning:   when initialized here [-Wreorder]
+ music_cont_out_proxy::music_cont_out_proxy()
+ ^
+In file included from music_cont_out_proxy.cpp:23:0:
+music_cont_out_proxy.h: In copy constructor 'nest::music_cont_out_proxy::music_cont_out_proxy(const nest::music_cont_out_proxy&)':
+music_cont_out_proxy.h:202:10: warning: 'nest::music_cont_out_proxy::S_' will be initialized after [-Wreorder]
+   State_ S_;
+          ^
+music_cont_out_proxy.h:201:15: warning:   'nest::music_cont_out_proxy::Parameters_ nest::music_cont_out_proxy::P_' [-Wreorder]
+   Parameters_ P_;
+               ^
+music_cont_out_proxy.cpp:242:1: warning:   when initialized here [-Wreorder]
+ music_cont_out_proxy::music_cont_out_proxy( const music_cont_out_proxy& n )
+ ^
+music_cont_out_proxy.cpp: In member function 'virtual void nest::music_cont_out_proxy::calibrate()':
+music_cont_out_proxy.cpp:293:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for ( long_t i = 0; i < P_.target_gids_.size(); i++ )
+                           ^
+music_cont_out_proxy.cpp:297:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for ( long_t j = 0; j < P_.record_from_.size(); ++j )
+                               ^
+In file included from noise_generator.h:29:0,
+                 from noise_generator.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from music_cont_out_proxy.h:42,
+                 from music_cont_out_proxy.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from parrot_neuron.h:74:0,
+                 from parrot_neuron.cpp:24:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from poisson_generator.h:32:0,
+                 from poisson_generator.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from pp_psc_delta.h:27:0,
+                 from pp_psc_delta.cpp:31:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from pp_pop_psc_delta.h:27:0,
+                 from pp_pop_psc_delta.cpp:29:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ppd_sup_generator.h:28:0,
+                 from ppd_sup_generator.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from pulsepacket_generator.h:30:0,
+                 from pulsepacket_generator.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from sli_neuron.h:27:0,
+                 from sli_neuron.cpp:24:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from sinusoidal_poisson_generator.h:27:0,
+                 from sinusoidal_poisson_generator.cpp:24:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from sinusoidal_gamma_generator.h:32:0,
+                 from sinusoidal_gamma_generator.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from spike_detector.h:29:0,
+                 from spike_detector.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from spike_generator.h:29:0,
+                 from spike_generator.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from stdp_connection_shared.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from spin_detector.h:29:0,
+                 from spin_detector.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from stdp_connection_hom.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from stdp_dopa_connection.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from stdp_pl_connection_hom.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from step_current_generator.h:57:0,
+                 from step_current_generator.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/connection.h:29,
+                 from tsodyks_connection_hom.h:102,
+                 from tsodyks_connection_hom.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from volume_transmitter.h:27:0,
+                 from volume_transmitter.cpp:24:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from spike_dilutor.h:27:0,
+                 from spike_dilutor.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/nodelist.h:26,
+                 from ../nestkernel/scheduler.h:35,
+                 from slice_ring_buffer.h:33,
+                 from slice_ring_buffer.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from iaf_psc_alpha_canon.h:29:0,
+                 from iaf_psc_alpha_canon.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from iaf_psc_alpha_presc.h:29:0,
+                 from iaf_psc_alpha_presc.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from iaf_psc_delta_canon.h:29:0,
+                 from iaf_psc_delta_canon.cpp:28:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from iaf_psc_exp_ps.h:29:0,
+                 from iaf_psc_exp_ps.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from poisson_generator_ps.h:28:0,
+                 from poisson_generator_ps.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from parrot_neuron_ps.h:27:0,
+                 from parrot_neuron_ps.cpp:24:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from precisemodule.cpp:37:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/subnet.h:28,
+                 from layer.h:30,
+                 from layer.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from connection_creator.h:27,
+                 from connection_creator.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from topologymodule.cpp:29:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from topologymodule.h:27,
+                 from parameter.h:34,
+                 from parameter.cpp:23:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from selector.cpp:25:
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of 'void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]':
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from main.cpp:27:
+../nestkernel/event.h: In instantiation of ‘void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of ‘void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of ‘void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of ‘void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of ‘void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+In file included from ../nestkernel/node.h:36:0,
+                 from ../nestkernel/model.h:29,
+                 from ../nestkernel/network.h:30,
+                 from neststartup.cpp:29:
+../nestkernel/event.h: In instantiation of ‘void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:904:45:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of ‘void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = unsigned char; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:925:64:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+../nestkernel/event.h: In instantiation of ‘void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = long unsigned int; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:926:44:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of ‘void nest::write_to_comm_buffer(T, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:931:37:   required from here
+../nestkernel/event.h:781:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../nestkernel/event.h: In instantiation of ‘void nest::read_from_comm_buffer(T&, std::vector<unsigned int>::iterator&) [with T = double; std::vector<unsigned int>::iterator = __gnu_cxx::__normal_iterator<unsigned int*, std::vector<unsigned int> >]’:
+../nestkernel/event.h:965:36:   required from here
+../nestkernel/event.h:808:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for ( int i = 0; i < num_uints; i++ )
+                      ^
+cp: omitting directory ‘/home/perser/workspace/nest-2.10.0/testsuite/manualtests/ticket-458’
+cp: omitting directory ‘/home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/fail’
+cp: omitting directory ‘/home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/pass’
+In file included from /usr/include/python2.7/Python.h:121:0,
+                 from pynestkernel.cpp:16:
+pynestkernel.cpp: In function 'PyObject* newarrayobject(PyTypeObject*, Py_ssize_t, arraydescr*)':
+/usr/include/python2.7/pyerrors.h:220:74: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ #define PyErr_BadInternalCall() _PyErr_BadInternalCall(__FILE__, __LINE__)
+                                                                          ^
+pynestkernel.cpp:1276:9: note: in expansion of macro 'PyErr_BadInternalCall'
+         PyErr_BadInternalCall();
+         ^

@@ -92,7 +92,6 @@ namespace nest
 class STDPSharedWeights
 {
 	public:
-	
 	STDPSharedWeights()
 		: weight_( 1.0 )
 	{
