@@ -138,6 +138,7 @@ am_libmodelsmodule_la_OBJECTS = libmodelsmodule_la-ac_generator.lo \
 	libmodelsmodule_la-modelsmodule.lo \
 	libmodelsmodule_la-multimeter.lo \
 	libmodelsmodule_la-music_cont_in_proxy.lo \
+	libmodelsmodule_la-music_cont_out_proxy.lo \
 	libmodelsmodule_la-music_event_in_proxy.lo \
 	libmodelsmodule_la-music_event_out_proxy.lo \
 	libmodelsmodule_la-music_message_in_proxy.lo \
@@ -154,6 +155,7 @@ am_libmodelsmodule_la_OBJECTS = libmodelsmodule_la-ac_generator.lo \
 	libmodelsmodule_la-spike_detector.lo \
 	libmodelsmodule_la-spike_generator.lo \
 	libmodelsmodule_la-spin_detector.lo \
+	libmodelsmodule_la-stdp_connection_shared.lo \
 	libmodelsmodule_la-stdp_connection_hom.lo \
 	libmodelsmodule_la-stdp_dopa_connection.lo \
 	libmodelsmodule_la-stdp_pl_connection_hom.lo \
@@ -547,6 +549,7 @@ libmodelsmodule_la_SOURCES = \
 		modelsmodule.h modelsmodule.cpp\
 		multimeter.h multimeter.cpp\
 		music_cont_in_proxy.h music_cont_in_proxy.cpp\
+		music_cont_out_proxy.h music_cont_out_proxy.cpp\
 		music_event_in_proxy.h music_event_in_proxy.cpp\
 		music_event_out_proxy.h music_event_out_proxy.cpp\
 		music_message_in_proxy.h music_message_in_proxy.cpp\
@@ -568,6 +571,7 @@ libmodelsmodule_la_SOURCES = \
 		static_connection_hom_w.h\
 		stdp_connection.h\
 		stdp_connection_facetshw_hom.h stdp_connection_facetshw_hom_impl.h\
+		stdp_connection_shared.h stdp_connection_shared.cpp\
 		stdp_connection_hom.h stdp_connection_hom.cpp\
 		stdp_dopa_connection.h stdp_dopa_connection.cpp\
 		stdp_connection_facetshw_hom.h stdp_connection_facetshw_hom_impl.h\
@@ -680,6 +684,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-modelsmodule.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-multimeter.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-music_cont_in_proxy.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-music_cont_out_proxy.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-music_event_in_proxy.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-music_event_out_proxy.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-music_message_in_proxy.Plo@am__quote@
@@ -698,6 +703,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-spike_generator.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-spin_detector.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-stdp_connection_hom.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-stdp_connection_shared.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-stdp_dopa_connection.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-stdp_pl_connection_hom.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libmodelsmodule_la-step_current_generator.Plo@am__quote@
@@ -980,6 +986,13 @@ libmodelsmodule_la-music_cont_in_proxy.lo: music_cont_in_proxy.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmodelsmodule_la_CXXFLAGS) $(CXXFLAGS) -c -o libmodelsmodule_la-music_cont_in_proxy.lo `test -f 'music_cont_in_proxy.cpp' || echo '$(srcdir)/'`music_cont_in_proxy.cpp
 
+libmodelsmodule_la-music_cont_out_proxy.lo: music_cont_out_proxy.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmodelsmodule_la_CXXFLAGS) $(CXXFLAGS) -MT libmodelsmodule_la-music_cont_out_proxy.lo -MD -MP -MF $(DEPDIR)/libmodelsmodule_la-music_cont_out_proxy.Tpo -c -o libmodelsmodule_la-music_cont_out_proxy.lo `test -f 'music_cont_out_proxy.cpp' || echo '$(srcdir)/'`music_cont_out_proxy.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libmodelsmodule_la-music_cont_out_proxy.Tpo $(DEPDIR)/libmodelsmodule_la-music_cont_out_proxy.Plo
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='music_cont_out_proxy.cpp' object='libmodelsmodule_la-music_cont_out_proxy.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmodelsmodule_la_CXXFLAGS) $(CXXFLAGS) -c -o libmodelsmodule_la-music_cont_out_proxy.lo `test -f 'music_cont_out_proxy.cpp' || echo '$(srcdir)/'`music_cont_out_proxy.cpp
+
 libmodelsmodule_la-music_event_in_proxy.lo: music_event_in_proxy.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmodelsmodule_la_CXXFLAGS) $(CXXFLAGS) -MT libmodelsmodule_la-music_event_in_proxy.lo -MD -MP -MF $(DEPDIR)/libmodelsmodule_la-music_event_in_proxy.Tpo -c -o libmodelsmodule_la-music_event_in_proxy.lo `test -f 'music_event_in_proxy.cpp' || echo '$(srcdir)/'`music_event_in_proxy.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libmodelsmodule_la-music_event_in_proxy.Tpo $(DEPDIR)/libmodelsmodule_la-music_event_in_proxy.Plo
@@ -1091,6 +1104,13 @@ libmodelsmodule_la-spin_detector.lo: spin_detector.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='spin_detector.cpp' object='libmodelsmodule_la-spin_detector.lo' libtool=yes @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmodelsmodule_la_CXXFLAGS) $(CXXFLAGS) -c -o libmodelsmodule_la-spin_detector.lo `test -f 'spin_detector.cpp' || echo '$(srcdir)/'`spin_detector.cpp
+
+libmodelsmodule_la-stdp_connection_shared.lo: stdp_connection_shared.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmodelsmodule_la_CXXFLAGS) $(CXXFLAGS) -MT libmodelsmodule_la-stdp_connection_shared.lo -MD -MP -MF $(DEPDIR)/libmodelsmodule_la-stdp_connection_shared.Tpo -c -o libmodelsmodule_la-stdp_connection_shared.lo `test -f 'stdp_connection_shared.cpp' || echo '$(srcdir)/'`stdp_connection_shared.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libmodelsmodule_la-stdp_connection_shared.Tpo $(DEPDIR)/libmodelsmodule_la-stdp_connection_shared.Plo
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='stdp_connection_shared.cpp' object='libmodelsmodule_la-stdp_connection_shared.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmodelsmodule_la_CXXFLAGS) $(CXXFLAGS) -c -o libmodelsmodule_la-stdp_connection_shared.lo `test -f 'stdp_connection_shared.cpp' || echo '$(srcdir)/'`stdp_connection_shared.cpp
 
 libmodelsmodule_la-stdp_connection_hom.lo: stdp_connection_hom.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libmodelsmodule_la_CXXFLAGS) $(CXXFLAGS) -MT libmodelsmodule_la-stdp_connection_hom.lo -MD -MP -MF $(DEPDIR)/libmodelsmodule_la-stdp_connection_hom.Tpo -c -o libmodelsmodule_la-stdp_connection_hom.lo `test -f 'stdp_connection_hom.cpp' || echo '$(srcdir)/'`stdp_connection_hom.cpp

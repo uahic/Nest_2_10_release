@@ -1,681 +1,768 @@
 
-Sep 22 18:32:44 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:38 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:44 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:38 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:44 :makeallhelp [Info]: 
+Nov 10 14:49:38 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/libnestutil
 
-Sep 22 18:32:44 :makeallhelp [Info]: 
+Nov 10 14:49:38 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/libnestutil/.
+
+Nov 10 14:49:38 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:38 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/sli
 
-Sep 22 18:32:44 :makeallhelp [Info]: 
+Nov 10 14:49:38 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/librandom
 
-Sep 22 18:32:44 :makeallhelp [Info]: 
+Nov 10 14:49:38 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/lib
 
-Sep 22 18:32:44 :makeallhelp [Info]: 
+Nov 10 14:49:38 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/lib/sli
 
-Sep 22 18:32:44 :makeallhelp [Error]: 
+Nov 10 14:49:39 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/lib/sli/nest-init.sli
 
-Sep 22 18:32:44 makehelp [Error]: KeyName:ExpectedError
+Nov 10 14:49:39 makehelp [Error]: KeyName:ExpectedError
+    Could not open the following file for reading: "rcsinfo".
 
-Sep 22 18:32:44 :makeallhelp [Info]: 
+Nov 10 14:49:39 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/nestkernel
 
-Sep 22 18:32:44 :makeallhelp [Error]: 
+Nov 10 14:49:39 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/nestkernel/synaptic_element.cpp
 
-Sep 22 18:32:44 ws [Error]: BadIO
+Nov 10 14:49:39 ws [Error]: BadIO
 
-Sep 22 18:32:44 :makeallhelp [Info]: 
+Nov 10 14:49:39 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/models
 
-Sep 22 18:32:45 :makeallhelp [Info]: 
+Nov 10 14:49:39 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/models/sli
 
-Sep 22 18:32:45 :makeallhelp [Info]: 
+Nov 10 14:49:39 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/precise
 
-Sep 22 18:32:45 :makeallhelp [Info]: 
+Nov 10 14:49:39 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/topology
 
-Sep 22 18:32:45 :makeallhelp [Info]: 
+Nov 10 14:49:39 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/topology/sli
 
-Sep 22 18:32:45 :makeallhelp [Info]: 
+Nov 10 14:49:39 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/nest
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_iaf in iaf_neuron
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_sli_neuron in sli_neuron
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_spike_generator in spike_generator
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_lambertw in LambertW0
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_lambertw in LambertW
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_lambertw in LambertWm1
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_iaf in unittest::ToUnitTestPrecision
 Done.
 
-Sep 22 18:32:45 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:39 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:45 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:39 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:45 :makeallhelp [Info]: 
+Nov 10 14:49:39 :makeallhelp [Info]: 
     Processing directory 
     /home/perser/workspace/nest-2.10.0/testsuite/selftests
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/testsuite/selftests/.
+
+Nov 10 14:49:39 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_iaf in iaf_neuron
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_sli_neuron in sli_neuron
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to testsuite::test_spike_generator in spike_generator
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:39 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to testsuite::test_lambertw in LambertW0
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to testsuite::test_lambertw in LambertW
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to testsuite::test_lambertw in LambertWm1
 
-Sep 22 18:32:45 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to testsuite::test_iaf in unittest::ToUnitTestPrecision
 Done.
 
-Sep 22 18:32:45 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:40 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:45 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:40 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:45 :makeallhelp [Info]: 
+Nov 10 14:49:40 :makeallhelp [Info]: 
     Processing directory 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/testsuite/unittests/.
+
+Nov 10 14:49:40 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_common_props_setting.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
+    Could not open the following file for reading: "rcsinfo".
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_convergent_connect.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_divergent_connect.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_iaf_min_delay_create.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_iaf_min_delay_set.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_multimeter.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_multiple_multimeter.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_poisson_generator_campbell_alpha.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_psp_amplitude_consistency.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_random_convergent_connect.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_random_divergent_connect.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_sinusoidal_gamma_generator.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_sinusoidal_poisson_generator.sli
 
-Sep 22 18:32:45 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:45 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/unittests/test_spike_poisson_ps_base2.sli
 
-Sep 22 18:32:45 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to testsuite::test_sinusoidal_gamma_generator_1 in 
     testsuite::test_sinusoidal_gamma_generator
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to testsuite::test_sinusoidal_poisson_generator_1 in 
     testsuite::test_sinusoidal_poisson_generator
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to testsuite::ticket-452 in testsuite::test_steppedsim
 Done.
 
-Sep 22 18:32:46 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:40 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:46 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:40 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:46 :makeallhelp [Info]: 
+Nov 10 14:49:40 :makeallhelp [Info]: 
     Processing directory 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/.
+
+Nov 10 14:49:40 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/issue-105.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+    Could not open the following file for reading: "rcsinfo".
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-235.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-293.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-333.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-382.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-399.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-414.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-421.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-451.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-464.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-466.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-475.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-478.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-519.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-520.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-537.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-733.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-737.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-772.sli
 
-Sep 22 18:32:46 ws [Error]: BadIO
+Nov 10 14:49:40 ws [Error]: BadIO
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-787.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-800.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-85.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-921.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-926.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-933.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-941.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-949.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 :makeallhelp [Error]: 
+Nov 10 14:49:40 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/regressiontests/ticket-959.sli
 
-Sep 22 18:32:46 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:40 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:40 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:40 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to testsuite::test_sinusoidal_gamma_generator_1 in 
     testsuite::test_sinusoidal_gamma_generator
 
-Sep 22 18:32:46 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to testsuite::test_sinusoidal_poisson_generator_1 in 
     testsuite::test_sinusoidal_poisson_generator
 Done.
 
-Sep 22 18:32:47 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:41 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:47 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:41 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:47 :makeallhelp [Info]: 
+Nov 10 14:49:41 :makeallhelp [Info]: 
     Processing directory 
     /home/perser/workspace/nest-2.10.0/testsuite/manualtests
 
-Sep 22 18:32:47 :makeallhelp [Error]: 
+Nov 10 14:49:41 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/testsuite/manualtests/.
+
+Nov 10 14:49:41 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:41 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/manualtests/test_compare_delta.sli
 
-Sep 22 18:32:47 ws [Error]: BadIO
+Nov 10 14:49:41 ws [Error]: BadIO
+    Could not open the following file for reading: "rcsinfo".
 
-Sep 22 18:32:47 :makeallhelp [Error]: 
+Nov 10 14:49:41 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/manualtests/test_hh_cond_exp_traub.sli
 
-Sep 22 18:32:47 ws [Error]: BadIO
+Nov 10 14:49:41 ws [Error]: BadIO
 
-Sep 22 18:32:47 :makeallhelp [Error]: 
+Nov 10 14:49:41 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/manualtests/test_spike_poisson_ps_base2_f.sli
 
-Sep 22 18:32:47 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:41 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:47 :makeallhelp [Error]: 
+Nov 10 14:49:41 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/manualtests/test_spike_poisson_ps_base2_p.sli
 
-Sep 22 18:32:47 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:41 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:47 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:47 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:47 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 
-Sep 22 18:32:47 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to testsuite::test_sinusoidal_gamma_generator_1 in 
     testsuite::test_sinusoidal_gamma_generator
 
-Sep 22 18:32:47 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to testsuite::test_sinusoidal_poisson_generator_1 in 
     testsuite::test_sinusoidal_poisson_generator
 Done.
 
-Sep 22 18:32:47 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:41 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:47 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:41 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:47 :makeallhelp [Info]: 
+Nov 10 14:49:41 :makeallhelp [Info]: 
     Processing directory /home/perser/workspace/nest-2.10.0/testsuite/mpitests
 
-Sep 22 18:32:47 :makeallhelp [Error]: 
+Nov 10 14:49:41 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/testsuite/mpitests/.
+
+Nov 10 14:49:41 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:41 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/mpitests/test_gsd_distribution_threaded.sli
 
-Sep 22 18:32:47 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:41 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+    Could not open the following file for reading: "rcsinfo".
 
-Sep 22 18:32:47 :makeallhelp [Error]: 
+Nov 10 14:49:41 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/mpitests/test_gsd.sli
 
-Sep 22 18:32:47 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:41 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:47 :makeallhelp [Error]: 
+Nov 10 14:49:41 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/mpitests/test_gsd_threaded.sli
 
-Sep 22 18:32:47 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:41 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
 
-Sep 22 18:32:47 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:47 SLI [Warning]: 
+Nov 10 14:49:41 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:42 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:47 SLI [Warning]: 
+Nov 10 14:49:42 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 Done.
 
-Sep 22 18:32:48 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:42 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:48 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:42 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:48 :makeallhelp [Info]: 
+Nov 10 14:49:42 :makeallhelp [Info]: 
     Processing directory 
     /home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests
 
-Sep 22 18:32:48 SLI [Warning]: 
+Nov 10 14:49:42 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/.
+
+Nov 10 14:49:42 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:42 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:48 SLI [Warning]: 
+Nov 10 14:49:42 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:42 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:48 SLI [Warning]: 
+Nov 10 14:49:42 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 Done.
 
-Sep 22 18:32:48 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:42 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:48 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:42 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:48 :makeallhelp [Info]: 
+Nov 10 14:49:42 :makeallhelp [Info]: 
     Processing directory 
     /home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/pass
 
-Sep 22 18:32:48 :makeallhelp [Error]: 
+Nov 10 14:49:42 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/pass/.
+
+Nov 10 14:49:42 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:42 :makeallhelp [Error]: 
     Documentation error in file 
     /home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/pass/test_parse_message_line.sli
 
-Sep 22 18:32:48 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+Nov 10 14:49:42 makehelp [Error]: MissingObligatoryMinusAfterCommandNameError
+    Could not open the following file for reading: "rcsinfo".
 
-Sep 22 18:32:48 SLI [Warning]: 
+Nov 10 14:49:42 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:48 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:48 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to testsuite::crash_distributed_assert_or_die in 
     testsuite::test_distributed_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to testsuite::fail_distributed_assert_or_die in 
     testsuite::test_distributed_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to testsuite::crash_distributed_collect_assert_or_die in 
     testsuite::test_distributed_collect_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to testsuite::fail_distributed_collect_assert_or_die in 
     testsuite::test_distributed_collect_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to testsuite::crash_distributed_invariant_assert_or_die in 
     testsuite::test_distributed_invariant_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to testsuite::fail_distributed_invariant_assert_or_die in 
     testsuite::test_distributed_invariant_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to testsuite::crash_distributed_pass_or_die in 
     testsuite::test_distributed_pass_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to testsuite::fail_distributed_pass_or_die in 
     testsuite::test_distributed_pass_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to 
     testsuite::crash_distributed_process_invariant_collect_assert_or_die in 
     testsuite::test_distributed_process_invariant_collect_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to 
     testsuite::fail_distributed_process_invariant_collect_assert_or_die in 
     testsuite::test_distributed_process_invariant_collect_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to 
     testsuite::crash_distributed_process_invariant_events_assert_or_die in 
     testsuite::test_distributed_process_invariant_events_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to 
     testsuite::fail_distributed_process_invariant_events_assert_or_die in 
     testsuite::test_distributed_process_invariant_events_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to 
     testsuite::crash_distributed_rank_invariant_collect_assert_or_die in 
     testsuite::test_distributed_rank_invariant_collect_assert_or_die
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to 
     testsuite::fail_distributed_rank_invariant_collect_assert_or_die in 
     testsuite::test_distributed_rank_invariant_collect_assert_or_die
 Done.
 
-Sep 22 18:32:49 SLIStartup [Info]: 
-    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+Nov 10 14:49:43 SLIStartup [Info]: 
+    Using SLIDATADIR=/home/perser/workspace/nest-2.10.0/build/share/nest
 
-Sep 22 18:32:49 SLIStartup [Info]: 
-    Using 
-    SLIDOCDIR=/home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+Nov 10 14:49:43 SLIStartup [Info]: 
+    Using SLIDOCDIR=/home/perser/workspace/nest-2.10.0/build/share/doc/nest
 SLI v2.10.0 (C) 2004 The NEST Initiative
 Generating on-line help pages for NEST ...
 
-Sep 22 18:32:49 :makeallhelp [Info]: 
+Nov 10 14:49:43 :makeallhelp [Info]: 
     Processing directory 
     /home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/fail
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 :makeallhelp [Error]: 
+    Documentation error in file 
+    /home/perser/workspace/nest-2.10.0/testsuite/mpi_selftests/fail/.
+
+Nov 10 14:49:43 raiserror [Error]: BadErrorHandler
+    : The error handler of a stopped context contained itself an error.
+
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to  in correlospinmatrix_detector
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
+    Dead Link to  in music_cont_out_proxy
+
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to  in pp_psc_delta
 
-Sep 22 18:32:49 SLI [Warning]: 
+Nov 10 14:49:43 SLI [Warning]: 
     Dead Link to  in tsodyks_synapse_hom
 Done.

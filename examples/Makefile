@@ -13,7 +13,7 @@
 # PARTICULAR PURPOSE.
 
 
-VPATH = ../../__NEST_SOURCE/examples
+
 am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'
 am__make_running_with_option = \
   case $${target_option-} in \
@@ -168,7 +168,7 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/jochen/work/src/nest-simulator/__NEST_SOURCE/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/perser/workspace/nest-2.10.0/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_CFLAGS =   -W -Wall -pedantic -Wno-long-long  -O2 -g -O2 -fopenmp
 AM_CXXFLAGS =   -W -Wall -pedantic -Wno-long-long  -O2  -fopenmp
@@ -177,17 +177,17 @@ AR = ar
 ARFLAGS = 
 ARGZ_H = 
 AS = 
-AUTOCONF = ${SHELL} /home/jochen/work/src/nest-simulator/__NEST_SOURCE/missing autoconf
-AUTOHEADER = ${SHELL} /home/jochen/work/src/nest-simulator/__NEST_SOURCE/missing autoheader
-AUTOMAKE = ${SHELL} /home/jochen/work/src/nest-simulator/__NEST_SOURCE/missing automake-1.14
-AWK = gawk
+AUTOCONF = ${SHELL} /home/perser/workspace/nest-2.10.0/missing autoconf
+AUTOHEADER = ${SHELL} /home/perser/workspace/nest-2.10.0/missing autoheader
+AUTOMAKE = ${SHELL} /home/perser/workspace/nest-2.10.0/missing automake-1.14
+AWK = mawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = 
 CPP = gcc -E
 CPPFLAGS = 
-CXX = g++
-CXXCPP = g++ -E
+CXX = mpicxx
+CXXCPP = mpicxx -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = 
 CXX_AR = ar cru
@@ -195,7 +195,7 @@ CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DLLTOOL = false
-DOXYGEN = /usr/bin/doxygen
+DOXYGEN = 
 DSYMUTIL = 
 DUMPBIN = 
 ECHO_C = 
@@ -228,12 +228,12 @@ HAVE_SSTREAM =
 HAVE_STL_VECTOR_CAPACITY_BASE_UNITY = 
 HAVE_STL_VECTOR_CAPACITY_DOUBLING = 
 HAVE_VAMPIR = 
-HELPDIRS = /home/jochen/work/src/nest-simulator/__NEST_SOURCE/libnestutil:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/sli:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/librandom:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/lib:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/lib/sli:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/nestkernel:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/models:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/models/sli:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/precise:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/topology:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/topology/sli:/home/jochen/work/src/nest-simulator/__NEST_SOURCE/nest
+HELPDIRS = /home/perser/workspace/nest-2.10.0/libnestutil:/home/perser/workspace/nest-2.10.0/sli:/home/perser/workspace/nest-2.10.0/librandom:/home/perser/workspace/nest-2.10.0/lib:/home/perser/workspace/nest-2.10.0/lib/sli:/home/perser/workspace/nest-2.10.0/nestkernel:/home/perser/workspace/nest-2.10.0/models:/home/perser/workspace/nest-2.10.0/models/sli:/home/perser/workspace/nest-2.10.0/precise:/home/perser/workspace/nest-2.10.0/topology:/home/perser/workspace/nest-2.10.0/topology/sli:/home/perser/workspace/nest-2.10.0/nest
 HOST = 
 INCLTDL = 
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
-INSTALL_HELP_LOG = /home/jochen/work/src/nest-simulator/__NEST_BUILD/install-help.log
+INSTALL_HELP_LOG = /home/perser/workspace/nest-2.10.0/install-help.log
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
@@ -267,14 +267,14 @@ LT_DLLOADERS =  libltdl/dlopen.la
 LT_DLPREOPEN = -dlpreopen libltdl/dlopen.la 
 MAINT = #
 MAKE = /usr/bin/make
-MAKEINFO = ${SHELL} /home/jochen/work/src/nest-simulator/__NEST_SOURCE/missing makeinfo
+MAKEINFO = ${SHELL} /home/perser/workspace/nest-2.10.0/missing makeinfo
 MAKE_FLAGS = 
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 MPI_INCLUDE = 
 MPI_LIBS = 
-MUSIC_INCLUDE = 
-MUSIC_LIBS = 
+MUSIC_INCLUDE = -I/home/perser/.local//include
+MUSIC_LIBS = -L/home/perser/.local//lib -lmusic
 NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
@@ -290,12 +290,12 @@ PACKAGE_TARNAME = nest
 PACKAGE_URL = 
 PACKAGE_VERSION = 2.10.0
 PATH_SEPARATOR = :
-PKGBUILDDIR = /home/jochen/work/src/nest-simulator/__NEST_BUILD
+PKGBUILDDIR = /home/perser/workspace/nest-2.10.0
 PKGDATADIR = ${datarootdir}/nest
-PKGDATADIR_AS_CONFIGURED = /home/jochen/opt/nest/share/nest
+PKGDATADIR_AS_CONFIGURED = /home/perser/workspace/nest-2.10.0/build/share/nest
 PKGDOCDIR = ${datarootdir}/doc/nest
-PKGDOCDIR_AS_CONFIGURED = /home/jochen/opt/nest/share/doc/nest
-PKGSRCDIR = /home/jochen/work/src/nest-simulator/__NEST_SOURCE
+PKGDOCDIR_AS_CONFIGURED = /home/perser/workspace/nest-2.10.0/build/share/doc/nest
+PKGSRCDIR = /home/perser/workspace/nest-2.10.0
 PYEXECDIR = ${exec_prefix}/lib/python2.7/site-packages
 PYNEST_CPPFLAGS = -I/usr/include/python2.7
 PYNEST_CXXFLAGS = -fno-strict-aliasing
@@ -316,26 +316,26 @@ SLI_EXITCODE_SEGFAULT = 139
 SLI_LIBS =   -lcurses -lreadline
 SLI_MAJOR = 2
 SLI_MINOR = 10
-SLI_MODULES_LDADD =  /home/jochen/work/src/nest-simulator/__NEST_BUILD/models/libmodelsmodule.la /home/jochen/work/src/nest-simulator/__NEST_BUILD/precise/libprecisemodule.la /home/jochen/work/src/nest-simulator/__NEST_BUILD/topology/libtopologymodule.la
+SLI_MODULES_LDADD =  /home/perser/workspace/nest-2.10.0/models/libmodelsmodule.la /home/perser/workspace/nest-2.10.0/precise/libprecisemodule.la /home/perser/workspace/nest-2.10.0/topology/libtopologymodule.la
 SLI_PATCHLEVEL = 0
-SLI_PREFIX = /home/jochen/opt/nest
+SLI_PREFIX = /home/perser/workspace/nest-2.10.0/build
 SLI_PRGNAME = nest-2.10.0
 SLI_SUBDIRS = libnestutil sli librandom lib nestkernel models precise topology nest
 SLI_THREAD_DEFS = 
 SLI_USER_MODULES_LDADD = 
 SLI_VERSION = 2.10.0
 STRIP = strip
-TESTSUITE_BASEDIR = /home/jochen/opt/nest/share/doc/nest
+TESTSUITE_BASEDIR = /home/perser/workspace/nest-2.10.0/build/share/doc/nest
 VAMPIR_CFLAGS = 
 VAMPIR_LIBS = 
 VERSION = 2.10.0
-abs_builddir = /home/jochen/work/src/nest-simulator/__NEST_BUILD/examples
-abs_srcdir = /home/jochen/work/src/nest-simulator/__NEST_BUILD/../__NEST_SOURCE/examples
-abs_top_builddir = /home/jochen/work/src/nest-simulator/__NEST_BUILD
-abs_top_srcdir = /home/jochen/work/src/nest-simulator/__NEST_BUILD/../__NEST_SOURCE
+abs_builddir = /home/perser/workspace/nest-2.10.0/examples
+abs_srcdir = /home/perser/workspace/nest-2.10.0/examples
+abs_top_builddir = /home/perser/workspace/nest-2.10.0
+abs_top_srcdir = /home/perser/workspace/nest-2.10.0
 ac_ct_AR = ar
 ac_ct_CC = gcc
-ac_ct_CXX = g++
+ac_ct_CXX = mpicxx
 ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .
@@ -363,7 +363,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/jochen/work/src/nest-simulator/__NEST_SOURCE/install-sh
+install_sh = ${SHELL} /home/perser/workspace/nest-2.10.0/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -376,7 +376,7 @@ oldincludedir = /usr/include
 pdfdir = ${docdir}
 pkgpyexecdir = ${pyexecdir}/nest
 pkgpythondir = ${pythondir}/nest
-prefix = /home/jochen/opt/nest
+prefix = /home/perser/workspace/nest-2.10.0/build
 program_transform_name = s,x,x,
 psdir = ${docdir}
 pyexecdir = ${exec_prefix}/lib/python2.7/site-packages
@@ -384,14 +384,14 @@ pythondir = ${prefix}/lib/python2.7/site-packages
 rp = 
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-srcdir = ../../__NEST_SOURCE/examples
+srcdir = .
 subdirs =  libltdl
 sys_symbol_underscore = no
 sysconfdir = ${prefix}/etc
 target_alias = 
 top_build_prefix = ../
 top_builddir = ..
-top_srcdir = ../../__NEST_SOURCE
+top_srcdir = ..
 SUBDIRS = nest sli
 DIST_SUBDIRS = MyModule
 EXTRA_DIST = README.md
@@ -710,7 +710,7 @@ uninstall-am:
 
 
 install-data-hook:
-	${INSTALL} /home/jochen/work/src/nest-simulator/__NEST_SOURCE/examples/run_examples.sh $(DESTDIR)${datarootdir}/doc/nest
+	${INSTALL} /home/perser/workspace/nest-2.10.0/examples/run_examples.sh $(DESTDIR)${datarootdir}/doc/nest
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

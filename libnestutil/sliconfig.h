@@ -23,7 +23,7 @@
 
 #define SLI_SOURCEDIR "/home/perser/workspace/nest-2.10.0"
 #define SLI_BUILDDIR "/home/perser/workspace/nest-2.10.0"
-#define SLI_PREFIX "/home/perser/workspace/nest-2.10.0/debug_stuff"
+#define SLI_PREFIX "/home/perser/workspace/nest-2.10.0/build"
 
 #define SLI_EXITCODE_ABORT 134
 #define SLI_EXITCODE_SEGFAULT 139

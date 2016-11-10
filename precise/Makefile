@@ -216,8 +216,8 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = 
 CPP = gcc -E
 CPPFLAGS = 
-CXX = g++
-CXXCPP = g++ -E
+CXX = mpicxx
+CXXCPP = mpicxx -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = 
 CXX_AR = ar cru
@@ -303,8 +303,8 @@ MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 MPI_INCLUDE = 
 MPI_LIBS = 
-MUSIC_INCLUDE = 
-MUSIC_LIBS = 
+MUSIC_INCLUDE = -I/home/perser/.local//include
+MUSIC_LIBS = -L/home/perser/.local//lib -lmusic
 NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
@@ -322,9 +322,9 @@ PACKAGE_VERSION = 2.10.0
 PATH_SEPARATOR = :
 PKGBUILDDIR = /home/perser/workspace/nest-2.10.0
 PKGDATADIR = ${datarootdir}/nest
-PKGDATADIR_AS_CONFIGURED = /home/perser/workspace/nest-2.10.0/debug_stuff/share/nest
+PKGDATADIR_AS_CONFIGURED = /home/perser/workspace/nest-2.10.0/build/share/nest
 PKGDOCDIR = ${datarootdir}/doc/nest
-PKGDOCDIR_AS_CONFIGURED = /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+PKGDOCDIR_AS_CONFIGURED = /home/perser/workspace/nest-2.10.0/build/share/doc/nest
 PKGSRCDIR = /home/perser/workspace/nest-2.10.0
 PYEXECDIR = ${exec_prefix}/lib/python2.7/site-packages
 PYNEST_CPPFLAGS = -I/usr/include/python2.7
@@ -348,14 +348,14 @@ SLI_MAJOR = 2
 SLI_MINOR = 10
 SLI_MODULES_LDADD =  /home/perser/workspace/nest-2.10.0/models/libmodelsmodule.la /home/perser/workspace/nest-2.10.0/precise/libprecisemodule.la /home/perser/workspace/nest-2.10.0/topology/libtopologymodule.la
 SLI_PATCHLEVEL = 0
-SLI_PREFIX = /home/perser/workspace/nest-2.10.0/debug_stuff
+SLI_PREFIX = /home/perser/workspace/nest-2.10.0/build
 SLI_PRGNAME = nest-2.10.0
 SLI_SUBDIRS = libnestutil sli librandom lib nestkernel models precise topology nest
 SLI_THREAD_DEFS = 
 SLI_USER_MODULES_LDADD = 
 SLI_VERSION = 2.10.0
 STRIP = strip
-TESTSUITE_BASEDIR = /home/perser/workspace/nest-2.10.0/debug_stuff/share/doc/nest
+TESTSUITE_BASEDIR = /home/perser/workspace/nest-2.10.0/build/share/doc/nest
 VAMPIR_CFLAGS = 
 VAMPIR_LIBS = 
 VERSION = 2.10.0
@@ -365,7 +365,7 @@ abs_top_builddir = /home/perser/workspace/nest-2.10.0
 abs_top_srcdir = /home/perser/workspace/nest-2.10.0
 ac_ct_AR = ar
 ac_ct_CC = gcc
-ac_ct_CXX = g++
+ac_ct_CXX = mpicxx
 ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .
@@ -406,7 +406,7 @@ oldincludedir = /usr/include
 pdfdir = ${docdir}
 pkgpyexecdir = ${pyexecdir}/nest
 pkgpythondir = ${pythondir}/nest
-prefix = /home/perser/workspace/nest-2.10.0/debug_stuff
+prefix = /home/perser/workspace/nest-2.10.0/build
 program_transform_name = s,x,x,
 psdir = ${docdir}
 pyexecdir = ${exec_prefix}/lib/python2.7/site-packages
@@ -441,7 +441,7 @@ AM_CPPFLAGS = -I$(top_srcdir)/libnestutil\
 		-I$(top_srcdir)/sli\
 		-I$(top_srcdir)/nestkernel\
 		 \
-		  
+		 -I/home/perser/.local//include 
 
 EXTRA_DIST = README.md
 all: all-am

@@ -335,7 +335,7 @@ INFO_OS="$(uname -s)"
 INFO_USER="$(whoami)"
 INFO_VER="$(uname -r)"
 
-TEST_BASEDIR="/home/jochen/opt/nest/share/doc/nest"
+TEST_BASEDIR="/home/perser/workspace/nest-2.10.0/build/share/doc/nest"
 TEST_OUTDIR=${TEST_OUTDIR:-"$( pwd )/reports"}
 TEST_LOGFILE="${TEST_OUTDIR}/installcheck.log"
 TEST_OUTFILE="${TEST_OUTDIR}/output.log"
@@ -349,7 +349,7 @@ fi
 mkdir "${TEST_OUTDIR}"
 
 PYTHON="${PYTHON:-python}"
-PYTHON_HARNESS="/home/jochen/opt/nest/share/nest/extras/do_tests.py"
+PYTHON_HARNESS="/home/perser/workspace/nest-2.10.0/build/share/nest/extras/do_tests.py"
 
 TMPDIR=${TMPDIR:-${TEST_OUTDIR}}
 TEST_TMPDIR="$(mktemp -d "${TMPDIR:-/tmp}/nest.XXXXX")"
